@@ -20,18 +20,35 @@ public class Arithmetic
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
-    {
-       
-        ArithmeticBase r= new ArithmeticBase();
-        double result = r.calculate(1,2);
-        System.out.println("result :" +result); 
+    public static void main(String[] args) {
+       Scanner k = new Scanner(System.in);
+       System.out.println("Enter String");
+       String s1 = k.nextLine();
+        
+       switch (s1.toUpperCase()) 
+        {
+            case "PLUS":
+                return x + y;
+            case "MINUS":
+                return x - y;
+            case "TIMES":
+                return x * y;
+            case "DIVIDE":
+                return x / y;
+            default:
+                throw new AssertionError("Unknown operations " + this);
+        
+        
+        
+        
+    }}
     
-    }
+   
+    
 
 
 
 
 
-}
+
 

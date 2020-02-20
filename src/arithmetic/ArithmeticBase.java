@@ -15,25 +15,46 @@ import java.util.Scanner;
  */
 public class ArithmeticBase 
 {
- public double x,y;
-    double calculate(double x, double y) 
+
+    private OP OP;
+/* 
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("enter String");
         String s= sc.next();
-        switch (s.toUpperCase()) 
-        {
-            case "PLUS":
-                return x + y;
-            case "MINUS":
-                return x - y;
-            case "TIMES":
-                return x * y;
-            case "DIVIDE":
-                return x / y;
-            default:
-                throw new AssertionError("Unknown operations " + this);
-        }
+       
+        
+        /*
+        }*/
+
+    private ArithmeticBase() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    private double calculate(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+     
+        public enum OP{PLUS, MINUS,TIMES, DIVIDE};
+        private final OP suit;
+
+        public ArithmeticBase(OP v){
+        suit = v;
+}
+
+public OP getOP(){
+return this.OP;
+}
+        public double x,y;
+        
+        public ArithmticBase(double x, double y){
+            
+        }
+      // double calculate(double x, double y) 
+       
+        ArithmeticBase r= new ArithmeticBase();
+        double result = r.calculate(1,2);
+        //System.out.println("result :" +result); 
+    
    
 }
